@@ -1,3 +1,4 @@
+import contents from 'contents';
 var contents = require('./contents.js');
 
 require('./style.css');
