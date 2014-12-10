@@ -11,6 +11,11 @@ module.exports = {
             { test: /\.css$/, loader: "style!css" },
             { test: /\.js$/, loader: "es6-loader" }
         ]
+    },
+    resolve: {
+      modulesDirectories: [
+        'node_modules'
+      ]
     }
 };
 
