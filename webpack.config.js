@@ -15,7 +15,6 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /\/(bower_components|node_modules)\//,
         loader: "es6-loader"
       }
     ]

@@ -1,5 +1,5 @@
+import * as $ from jquery;
 import contents from './contents';
-import $ from 'jquery';
 
 //var $ = require('jquery');
 require('../../style.css');
