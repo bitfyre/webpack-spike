@@ -1,6 +1,7 @@
 import contents from './contents';
 import $ from 'jquery';
 
-require('./style.css');
+//var $ = require('jquery');
+require('../../style.css');
 document.write(contents);
-console.log($);
+console.log($.fn.jquery);

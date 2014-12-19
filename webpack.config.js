@@ -1,21 +1,29 @@
+var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    entry: "./entry.js",
-    output: {
-        path: path.join(__dirname, 'build'),
-        filename: "bundle.js"
-    },
-    module: {
-        loaders: [
-            { test: /\.css$/, loader: "style!css" },
-            { test: /\.js$/, loader: "es6-loader" }
-        ]
-    },
-    resolve: {
-      modulesDirectories: [
-        'node_modules'
-      ]
-    }
+  entry: "./source/js/app.js",
+  output: {
+    path: path.join(__dirname, 'build'),
+    filename: "app.min.js"
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: "style!css"
+      },
+      {
+        test: /\.js$/,
+        exclude: /\/(bower_components|node_modules)\//,
+        loader: "es6-loader"
+      }
+    ]
+  },
+  resolve: {
+    modulesDirectories: [
+      'node_modules'
+    ]
+  }
 };
 
