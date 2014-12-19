@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'es6-loader'
+        loader: '6to5-loader'
       }
     ]
   },
